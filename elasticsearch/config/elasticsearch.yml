@@ -1,0 +1,16 @@
+# GENERAL SETTINS
+
+cluster.name:    "my-cluster"
+node.name:       "my-name"
+node.attr.zone:  "my-zone"
+
+node.roles: [ "master", "data" ]
+
+network.host: 0.0.0.0
+
+http.port: 9200
+transport.port: 9300
+
+bootstrap.memory_lock: true
+
+script.allowed_types: inline
