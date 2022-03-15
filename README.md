@@ -1,13 +1,12 @@
 # ELK (Elasticsearch + Logstash + Kibana) 8.1 with Docker
 
-<img src="https://www.elastic.co/assets/blt0373a4e6ec997c3e/elk-stack-3-elks-stacked.svg" alt="ELK" width="400" align="right" />
-
 ```
 docker-compose up -d
 ```
 
 * User `elastic` and password `123change...`
 * Elasticsearch: http://localhost:9200
+* After Elasticsearch is running, execute  `curl --location --request POST 'http://localhost:9200/_security/user/kibana_system/_password' --header 'Authorization: Basic ZWxhc3RpYzoxMjNjaGFuZ2UuLi4=' --header 'Content-Type: application/json' --data-raw '{ "password" : "123change..." }'` to update kibana_system password
 * Kibana: http://localhost:5601
 * For logstash demo, see confs in `logstash/conf` dir
 * CSV used to load data is in `logstash/csv` dir

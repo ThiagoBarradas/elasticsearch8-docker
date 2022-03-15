@@ -44,7 +44,7 @@ services:
       - "5601:5601"
     environment:
       - ELASTICSEARCH_USERNAME=kibana_system
-      - ELASTICSEARCH_PASSWORD="kibanapassword"
+      - ELASTICSEARCH_PASSWORD="123change..."
       - ELASTICSEARCH_URL=http://elasticsearch:9200
       - SERVER_NAME=my-kibana
       - XPACK_SECURITY_ENABLED=true
