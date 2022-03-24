@@ -4,13 +4,15 @@ cluster.name:    "my-cluster"
 node.name:       "my-name"
 node.attr.zone:  "my-zone"
 
-node.roles: [ "master", "data" ]
+#node.roles: [ "master", "data" ]
+#discovery.zen.minimum_master_nodes: 1
 
 network.host: 0.0.0.0
 
 http.port: 9200
 transport.port: 9300
 
-bootstrap.memory_lock: true
-
 script.allowed_types: inline
+
+xpack.license.self_generated.type: trial
+xpack.security.enabled: true
