@@ -14,5 +14,6 @@ transport.port: 9300
 
 script.allowed_types: inline
 
+path.repo: ["/usr/share/elasticsearch"]
 xpack.license.self_generated.type: trial
 xpack.security.enabled: true
